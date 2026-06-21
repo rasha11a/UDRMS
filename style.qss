@@ -1,0 +1,244 @@
+/* ── Global ── */
+QMainWindow, QWidget {
+    background-color: #1a2332;
+    color: #e8eaf0;
+    font-family: "Segoe UI";
+    font-size: 13px;
+}
+
+/* ── Sidebar ── */
+QWidget#sidebar {
+    background-color: #141c28;
+    border-right: 1px solid #2a3a52;
+}
+
+QLabel#sidebarTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4ecb8d;
+    padding: 20px 16px 8px 16px;
+    letter-spacing: 2px;
+}
+
+QPushButton[class="navButton"] {
+    text-align: left;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #8a9bb5;
+    font-size: 13px;
+    margin: 2px 8px;
+}
+
+QPushButton[class="navButton"]:hover {
+    background-color: #1e2e42;
+    color: #c8d8f0;
+}
+
+QPushButton[class="navButton"]:checked {
+    background-color: #2a5a3a;
+    color: #4ecb8d;
+    font-weight: bold;
+    border-left: 3px solid #4ecb8d;
+    border-radius: 0px;
+}
+
+/* ── Content area ── */
+QWidget#contentArea {
+    background-color: #1a2332;
+}
+
+/* ── Page titles ── */
+QLabel[class="pageTitle"] {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+QLabel[class="pageSubtitle"] {
+    font-size: 13px;
+    color: #6b7e99;
+    margin-bottom: 4px;
+}
+
+/* ── Stat cards ── */
+QWidget[class="card"] {
+    background-color: #1e2d40;
+    border-radius: 12px;
+    border: 1px solid #2a3a52;
+}
+
+QLabel[class="cardLabel"] {
+    font-size: 12px;
+    color: #6b7e99;
+}
+
+QLabel[class="cardValue"] {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4ecb8d;
+}
+
+/* ── Form inputs ── */
+QLineEdit, QComboBox {
+    background-color: #1e2d40;
+    border: 1px solid #2a3a52;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #e8eaf0;
+    font-size: 13px;
+    min-height: 20px;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border: 1.5px solid #4ecb8d;
+}
+
+QLineEdit::placeholder {
+    color: #4a5a72;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #1e2d40;
+    border: 1px solid #2a3a52;
+    border-radius: 8px;
+    color: #e8eaf0;
+    selection-background-color: #2a5a3a;
+    selection-color: #4ecb8d;
+    outline: none;
+}
+
+/* ── Buttons ── */
+QPushButton[class="primaryButton"] {
+    background-color: #2a5a3a;
+    color: #4ecb8d;
+    border: 1px solid #4ecb8d;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton[class="primaryButton"]:hover {
+    background-color: #4ecb8d;
+    color: #141c28;
+}
+
+QPushButton[class="primaryButton"]:pressed {
+    background-color: #3aab6d;
+    color: #141c28;
+}
+
+/* ── List widget ── */
+QListWidget {
+    background-color: #1e2d40;
+    border: 1px solid #2a3a52;
+    border-radius: 10px;
+    padding: 4px;
+    color: #e8eaf0;
+    outline: none;
+}
+
+QListWidget::item {
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin: 2px 0;
+    color: #c8d8f0;
+}
+
+QListWidget::item:hover {
+    background-color: #1e3a2a;
+    color: #4ecb8d;
+}
+
+QListWidget::item:selected {
+    background-color: #2a5a3a;
+    color: #4ecb8d;
+}
+
+/* ── General labels ── */
+QLabel {
+    color: #c8d8f0;
+}
+
+/* ── Group boxes (meal sections) ── */
+QGroupBox {
+    background-color: #1e2d40;
+    border: 1px solid #2a3a52;
+    border-radius: 10px;
+    margin-top: 14px;
+    padding: 10px;
+    color: #4ecb8d;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #4ecb8d;
+    font-size: 13px;
+}
+
+/* ── Form row labels ── */
+QFormLayout QLabel {
+    color: #8a9bb5;
+}
+
+/* ── Scroll bars ── */
+QScrollBar:vertical {
+    width: 6px;
+    background: transparent;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #2a3a52;
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4ecb8d;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+/* ── Message boxes ── */
+QMessageBox {
+    background-color: #1e2d40;
+    color: #e8eaf0;
+}
+
+QMessageBox QPushButton {
+    background-color: #2a5a3a;
+    color: #4ecb8d;
+    border: 1px solid #4ecb8d;
+    border-radius: 6px;
+    padding: 6px 16px;
+    min-width: 60px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #4ecb8d;
+    color: #141c28;
+}
